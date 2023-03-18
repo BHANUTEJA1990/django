@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tpl for loop demo</title>
+</head>
+<body>
+{% if emp_details %}
+
+{%for emp in emp_details %}
+<table>
+<tr>
+    <td> Employee Name:{{emp.name}}</td>
+    <td> Employee id:{{emp.id}}</td>
+
+</tr>
+</table>
+{% endfor %}
+
+{% else %}
+
+
+
+
+<h1> empty list!!!</h1>
+{% endif %}
+</body>
+</html>

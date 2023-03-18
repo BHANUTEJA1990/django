@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tpl if demo</title>
+</head>
+<body>
+{% if fruits_list %}
+<ul >
+<li>the given fruits list is {{fruits_list.0}}</li>
+<li>the given fruits list is {{fruits_list.1}}</li>
+<li>the given fruits list is {{fruits_list.2}}</li>
+</ul>
+{% else %}
+<h1>empty!!!</h1>
+{% endif %}
+
+</body>
+</html>

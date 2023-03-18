@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dtl cycle demo</title>
+</head>
+<body>
+<ul>
+    {% for d in device_list %}
+    <li style="background-color:{% cycle 'pink' 'red' 'green' %}">
+        {{ d }}
+    </li>
+    {% endfor %}
+</ul>
+</body>
+</html>

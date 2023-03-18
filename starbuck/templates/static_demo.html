@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>static_demo</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+<h1>STATIC WEB PAGE USING HTML CSS JS IMAGE IN DJANGO</h1>
+    <p id="demo">demo</p>
+    <script src="{% static 'js/demojs.js' %}">demo</script>
+
+<div>
+  <img src="{% static 'images/example.jpg' %}" alt="image" width="1100" height="700" >
+</div>
+<p>THE ABOUVE CAR DETAILS ARE IN JS <br>
+THE ABOUVE STYLE IN CSS<BR>
+HYPER TEXT ARE HTML<BR>
+IMAGE IN JPG FORMAT</p>
+
+</body>
+</html>

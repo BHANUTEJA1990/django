@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tpl_filters_demo</title>
+</head>
+<body>
+<div><h2>>>>>>>>>>>>>>>>>>>>filters demo<<<<<<<<<<<<<<</h2></div>
+<div><p><>>>>>>>>>>>>'length' filter:number of devices:{{ fruits_list | length }}</p></div>
+<div><p>>>>>>>Accessing element of list using index:{{ fruits_list.2 }}</p></div>
+<div> <p>'first' filters:First fruits name is{{ fruits_list |first }}</p></div>
+<div><p> 'upper' filters: fruits name in upper case {{ fruits_list |upper }}</p></div>
+<div><p> 'slice' filters: displaying list by skippingstep:{{ num_list | slice:":2" }}</p></div>
+<div><p> 'date' filters: displaying date:{{ date_time | date:"y-m-d H:m:s" }}</p></div>
+<div><p> 'timesince' filters: displaying date:{{ past_time | timesince }}</p></div>
+<div><p> 'add' filters: adding number:{{ number | add:"31" }}</p></div>
+<div><p> 'filesizeformate' filters: file size formate:{{ 123456 | filesizeformat }}</p></div>
+<div><p> 'divisibleby' filters: is number{{ number }}divisible by 4:{{number | divisibleby:"4" }}</p></div>
+<div><p> 'slugify' filters: fruits_list{{ slug | slugify }}</p></div>
+<div><p> 'random' filters: fruits_list{{ fruits_list | random }}</p></div>
+<div><p> 'wordcount' filters: fruits_list{{ apple | wordcount }}</p></div>
+{% comment 'bhbsiuacshichljc' %}
+fug;g;b;bb;kjhkhkn
+v;gk;k
+{% endcomment %}
+
+
+
+
+</body>
+</html>

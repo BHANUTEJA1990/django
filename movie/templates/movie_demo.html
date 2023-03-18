@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>movies list</title>
+</head>
+<body>
+{% if movie_list %}
+
+<table>
+  <thead>
+  <th>id</th>
+  <th>Title</th>
+  <th>Director</th>
+  </thead>
+  {% for mv in movie_list %}
+  <tbody>
+<tr>
+    <td> {{mv.id}}</td>
+    <td> {{mv.title}}</td>
+  <td>{{mv.director}}</td>
+
+</tr>
+
+  </tbody>
+</table>
+{% endfor %}
+
+{% else %}
+
+
+
+
+<h1> empty list!!!</h1>
+{% endif %}
+</body>
+</html>

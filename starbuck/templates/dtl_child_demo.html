@@ -1,0 +1,12 @@
+{% extends 'dtl_inheritance_demo.html' %}
+
+{% block content %}
+  <h2> child template</h2>
+{% for d in fruits_list %}
+  <li>{{ d }}</li>
+{% endfor %}
+{% endblock %}
+
+{% block summary %}
+    <h2>summary block</h2>
+{% endblock %}
