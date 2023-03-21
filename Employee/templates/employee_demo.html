@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>movies list</title>
+</head>
+<body>
+{% if employee_list %}
+
+<table>
+  <thead>
+  <th>id</th>
+  <th>fname</th>
+  <th>iname</th>
+  <th>age</th>
+  <th>address</th>
+  </thead>
+  {% for employee in employee_list %}
+  <tbody>
+<tr>
+    <td> {{employee.id}}</td>
+    <td> {{employee.fname}}</td>
+  <td>{{employee.iname}}</td>
+  <td>{{employee.age}}</td>
+  <td>{{employee.address}}</td>
+
+</tr>
+
+  </tbody>
+</table>
+{% endfor %}
+
+{% else %}
+
+
+
+
+<h1> empty list!!!</h1>
+{% endif %}
+</body>
+</html>
