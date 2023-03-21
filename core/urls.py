@@ -25,6 +25,7 @@ urlpatterns = [
     path('starbuck/',include('starbuck.urls')),
     path('movie/',include('movie.urls')),
     path('calapp/',include('calapp.urls')),
+    path('Employee/',include('Employee.urls')),
 
 
    # path('index/',views.show_text,name='index'),
