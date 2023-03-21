@@ -4,7 +4,8 @@ from .models import Movie
 # Create your views here.
 def movie(request,action):
     if action =="add":
-        mv =Movie(title="bahuballi",director="rajamouli",genre="historic")
+        mv =Movie(title="bahuballi",director="rajamouli",genre="historic",)
+        mv.full_clean()
         mv.save()
         return HttpResponse(f"Movies is added:{mv}")
     elif action =="get":
