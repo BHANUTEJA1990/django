@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'starbuck',
     'movie',
     'calapp',
-    'Employee'
+    'Employee',
+    'relapp',
+    'product',
 
     # 'bhanu',
 ]

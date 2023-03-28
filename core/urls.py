@@ -26,6 +26,8 @@ urlpatterns = [
     path('movie/',include('movie.urls')),
     path('calapp/',include('calapp.urls')),
     path('Employee/',include('Employee.urls')),
+    path('relapp/',include('relapp.urls')),
+    path('product/',include('product.urls'))
 
 
    # path('index/',views.show_text,name='index'),
